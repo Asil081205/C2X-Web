@@ -1,0 +1,58 @@
+import type { Statistic } from "@/types/statistic";
+
+export const COMPANY_STATS: Statistic[] = [
+  {
+    id: "1",
+    label: "Developers Using C2X",
+    value: 250000,
+    suffix: "+",
+    prefix: "",
+    decimals: 0,
+    icon: "👨‍💻",
+  },
+  {
+    id: "2",
+    label: "Countries Reached",
+    value: 120,
+    suffix: "+",
+    prefix: "",
+    decimals: 0,
+    icon: "🌍",
+  },
+  {
+    id: "3",
+    label: "Code Syncs Per Day",
+    value: 2.5,
+    suffix: "M+",
+    prefix: "",
+    decimals: 1,
+    icon: "🔄",
+  },
+  {
+    id: "4",
+    label: "Team Members",
+    value: 85,
+    suffix: "+",
+    prefix: "",
+    decimals: 0,
+    icon: "👥",
+  },
+  {
+    id: "5",
+    label: "AI Processing Power",
+    value: 99.9,
+    suffix: "%",
+    prefix: "",
+    decimals: 1,
+    icon: "🧠",
+  },
+  {
+    id: "6",
+    label: "Developer Satisfaction",
+    value: 4.8,
+    suffix: "★",
+    prefix: "",
+    decimals: 1,
+    icon: "⭐",
+  },
+];

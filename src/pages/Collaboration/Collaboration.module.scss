@@ -1,0 +1,78 @@
+@use "../../styles/variables" as v;
+
+.page {
+  overflow-x: hidden;
+}
+
+.heroImageWrap {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.heroImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: v.$radius-lg;
+  border: 1px solid v.$color-border;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: v.$space-xl;
+  margin-top: v.$space-xl;
+
+  @media (min-width: v.$bp-tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: v.$bp-laptop) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: v.$space-xl;
+  background: v.$color-surface;
+  border-radius: v.$radius-md;
+  border: 1px solid v.$color-border;
+  transition: all v.$transition-base;
+
+  &:hover {
+    border-color: v.$color-accent-dim;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: v.$radius-sm;
+  background: rgba(0, 122, 204, 0.1);
+  color: v.$color-accent-hover;
+  margin-bottom: v.$space-md;
+  flex-shrink: 0;
+}
+
+.card h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: v.$color-text-primary;
+  margin-bottom: v.$space-sm;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: v.$color-text-secondary;
+  line-height: 1.6;
+  margin: 0;
+}

@@ -1,0 +1,110 @@
+@use "../../styles/variables" as v;
+
+.page {
+  overflow-x: hidden;
+}
+
+.section {
+  padding-top: 0;
+}
+
+.toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: v.$space-md;
+  margin-bottom: v.$space-lg;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  border: 1px solid v.$color-border;
+  border-radius: v.$radius-sm;
+  padding: 0.7rem 0.9rem;
+  background-color: v.$color-surface;
+  color: v.$color-text-secondary;
+  max-width: 420px;
+  transition: border-color v.$transition-fast;
+
+  &:focus-within {
+    border-color: v.$color-accent;
+  }
+
+  svg {
+    flex-shrink: 0;
+  }
+
+  input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: v.$color-text-primary;
+    font-size: 0.875rem;
+
+    &::placeholder {
+      color: v.$color-text-secondary;
+    }
+  }
+}
+
+.categoryRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.categoryBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: v.$color-text-secondary;
+  background-color: v.$color-surface;
+  border: 1px solid v.$color-border;
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  transition:
+    color v.$transition-fast,
+    border-color v.$transition-fast,
+    background-color v.$transition-fast;
+
+  &:hover {
+    color: v.$color-text-primary;
+    border-color: #3a3a3a;
+  }
+
+  &.active {
+    color: #fff;
+    background-color: v.$color-accent;
+    border-color: v.$color-accent;
+  }
+}
+
+.resultCount {
+  font-size: 0.8125rem;
+  color: v.$color-text-secondary;
+  margin: 0 0 1.1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: v.$space-lg;
+
+  @media (min-width: v.$bp-tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: v.$bp-laptop) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.emptyState {
+  text-align: center;
+  color: v.$color-text-secondary;
+  padding: v.$space-3xl 0;
+}

@@ -1,0 +1,108 @@
+import type { TeamMember } from "@/types/team";
+
+export const TEAM: TeamMember[] = [
+  {
+    id: "1",
+    name: "Sarah Chen",
+    role: "CEO & Co-founder",
+    avatar: "https://placehold.co/200x200/007acc/ffffff?text=SC",
+    bio: "Former VP of Engineering at Stripe. Passionate about developer tools and remote work.",
+    leadership: true,
+    socials: {
+      twitter: "https://twitter.com/sarahchen",
+      linkedin: "https://linkedin.com/in/sarahchen",
+      github: "https://github.com/sarahchen",
+    },
+  },
+  {
+    id: "2",
+    name: "Alex Rivera",
+    role: "CTO & Co-founder",
+    avatar: "https://placehold.co/200x200/4ade80/ffffff?text=AR",
+    bio: "PhD in Computer Science from MIT. Expert in real-time systems and distributed computing.",
+    leadership: true,
+    socials: {
+      twitter: "https://twitter.com/alexrivera",
+      linkedin: "https://linkedin.com/in/alexrivera",
+      github: "https://github.com/alexrivera",
+    },
+  },
+  {
+    id: "3",
+    name: "Dr. Maya Patel",
+    role: "Head of AI",
+    avatar: "https://placehold.co/200x200/8b5cf6/ffffff?text=MP",
+    bio: "PhD in Artificial Intelligence from Stanford. Former AI researcher at Google Brain.",
+    leadership: true,
+    socials: {
+      twitter: "https://twitter.com/mayapatel",
+      linkedin: "https://linkedin.com/in/mayapatel",
+      github: "https://github.com/mayapatel",
+    },
+  },
+  {
+    id: "4",
+    name: "James Wilson",
+    role: "VP of Product",
+    avatar: "https://placehold.co/200x200/f59e0b/ffffff?text=JW",
+    bio: "Product leader with 15 years of experience building developer tools at Microsoft and GitHub.",
+    leadership: true,
+    socials: {
+      twitter: "https://twitter.com/jameswilson",
+      linkedin: "https://linkedin.com/in/jameswilson",
+      github: "https://github.com/jameswilson",
+    },
+  },
+  {
+    id: "5",
+    name: "Emily Rodriguez",
+    role: "Senior Software Engineer",
+    avatar: "https://placehold.co/200x200/ef4444/ffffff?text=ER",
+    bio: "Expert in full-stack development and real-time systems. Previously at Slack.",
+    leadership: false,
+    socials: {
+      twitter: "https://twitter.com/emilyrodriguez",
+      linkedin: "https://linkedin.com/in/emilyrodriguez",
+      github: "https://github.com/emilyrodriguez",
+    },
+  },
+  {
+    id: "6",
+    name: "Michael Chen",
+    role: "Product Designer",
+    avatar: "https://placehold.co/200x200/14b8a6/ffffff?text=MC",
+    bio: "Product designer with a focus on developer tools and design systems.",
+    leadership: false,
+    socials: {
+      twitter: "https://twitter.com/michaelchen",
+      linkedin: "https://linkedin.com/in/michaelchen",
+      github: "https://github.com/michaelchen",
+    },
+  },
+  {
+    id: "7",
+    name: "Priya Sharma",
+    role: "DevOps Engineer",
+    avatar: "https://placehold.co/200x200/ec4899/ffffff?text=PS",
+    bio: "Expert in cloud infrastructure and automation. Previously at Amazon Web Services.",
+    leadership: false,
+    socials: {
+      twitter: "https://twitter.com/priyasharma",
+      linkedin: "https://linkedin.com/in/priyasharma",
+      github: "https://github.com/priyasharma",
+    },
+  },
+  {
+    id: "8",
+    name: "David Kim",
+    role: "AI Engineer",
+    avatar: "https://placehold.co/200x200/3b82f6/ffffff?text=DK",
+    bio: "ML engineer with expertise in natural language processing and code intelligence.",
+    leadership: false,
+    socials: {
+      twitter: "https://twitter.com/davidkim",
+      linkedin: "https://linkedin.com/in/davidkim",
+      github: "https://github.com/davidkim",
+    },
+  },
+];
